@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add New Project</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000015;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 13px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #2563eb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Add New Project</h1>
+
+        <form action="/add-project" method="POST">
+
+            <label for="name">Project Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter project name"
+                required
+            >
+
+            <label for="description">Project Description</label>
+            <textarea
+                id="description"
+                name="description"
+                placeholder="Describe your project"
+                required
+            ></textarea>
+
+            <label for="technology">Technologies Used</label>
+            <input
+                type="text"
+                id="technology"
+                name="technology"
+                placeholder="Example: Python, Flask, HTML"
+                required
+            >
+
+            <button type="submit">Save Project</button>
+
+        </form>
+
+        <a href="/" class="back">Back to Home</a>
+
+    </div>
+
+</body>
+</html>
