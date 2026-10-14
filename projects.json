@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Library Management System",
+        "description": "Manage books, issue books and record book returns.",
+        "technology": "HTML, CSS, JavaScript"
+    },
+    {
+        "name": "Developer Portfolio",
+        "description": "A personal website to showcase projects and skills.",
+        "technology": "Python, Flask, HTML, CSS"
+    },
+    {
+        "name": "Attendance and Fee Reminder System",
+        "description": "A student management system that helps teachers track student attendance and manage fee records. It also provides reminders for pending fees and helps maintain student information efficiently.",
+        "technology": "Python, Flask,HTML,css,javascript"
+    },
+    {
+        "name": "Student Result System",
+        "description": "A system to manage student results",
+        "technology": "Python,Flask,HTML"
+    }
+]
